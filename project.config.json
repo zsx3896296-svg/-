@@ -1,0 +1,11 @@
+{
+  "miniprogramRoot": "miniprogram/",
+  "cloudfunctionRoot": "cloudfunctions/",
+  "compileType": "miniprogram",
+  "setting": {
+    "es6": true,
+    "minify": false,
+    "urlCheck": false,
+    "postcss": true
+  }
+}

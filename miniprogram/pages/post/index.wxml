@@ -1,0 +1,18 @@
+<view class="container" wx:if="{{post}}">
+  <view class="card">
+    <view class="title">{{post.title}}</view>
+    <view class="muted">{{post.createdAt}}</view>
+    <view class="content">{{post.content}}</view>
+  </view>
+
+  <view class="card">
+    <view class="title">联系方式</view>
+    <view wx:if="{{phone}}" class="contact">{{phone}}</view>
+    <view wx:else>
+      <view class="muted">认证校邮后可查看手机号</view>
+      <view class="primary-btn" bindtap="onGetPhone">立即获取</view>
+    </view>
+  </view>
+
+  <ad-slot title="本地商家推广" desc="欢迎合作投放" />
+</view>

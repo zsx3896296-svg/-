@@ -1,0 +1,18 @@
+<view class="container">
+  <view class="card">
+    <view class="title">微信登录</view>
+    <view class="muted">OpenID: {{openid || '未登录'}} </view>
+    <view class="primary-btn" bindtap="onLogin">微信一键登录</view>
+  </view>
+
+  <view class="card">
+    <view class="title">校邮认证</view>
+    <input placeholder="请输入 @ecjtu.edu.cn 邮箱" value="{{email}}" bindinput="onEmailInput" />
+    <view class="row">
+      <input placeholder="验证码" value="{{code}}" bindinput="onCodeInput" />
+      <view class="primary-btn small" bindtap="onSendCode">发送验证码</view>
+    </view>
+    <view class="primary-btn" bindtap="onVerify">完成认证</view>
+    <view class="status">认证状态：{{verified ? '已认证' : '未认证'}}</view>
+  </view>
+</view>

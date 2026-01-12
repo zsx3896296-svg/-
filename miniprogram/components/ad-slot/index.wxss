@@ -1,0 +1,14 @@
+.ad-slot {
+  border: 2rpx dashed #c7d3ef;
+  text-align: center;
+}
+
+.ad-slot .title {
+  font-weight: 600;
+  margin-bottom: 8rpx;
+}
+
+.ad-slot .desc {
+  color: #8b94a7;
+  font-size: 24rpx;
+}
