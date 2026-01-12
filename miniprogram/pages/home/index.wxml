@@ -1,0 +1,20 @@
+<view class="container">
+  <view class="card">
+    <input class="search-input" placeholder="搜索标题或内容" value="{{keyword}}" bindinput="onKeywordInput" />
+    <view class="primary-btn" bindtap="onSearch">搜索</view>
+  </view>
+
+  <view class="card" bindtap="goPublish">
+    <view class="primary-btn">发布新帖子</view>
+  </view>
+
+  <ad-slot title="校园活动广告" desc="品牌合作展示" />
+
+  <view wx:for="{{posts}}" wx:key="_id" class="card" bindtap="goDetail" data-id="{{item._id}}">
+    <view class="title">{{item.title}}</view>
+    <view class="content">{{item.content}}</view>
+    <view class="muted">{{item.createdAt}}</view>
+  </view>
+
+  <view wx:if="{{!posts.length}}" class="muted">暂无帖子</view>
+</view>

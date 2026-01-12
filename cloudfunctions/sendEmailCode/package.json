@@ -1,0 +1,8 @@
+{
+  "name": "sendEmailCode",
+  "version": "1.0.0",
+  "dependencies": {
+    "nodemailer": "^6.9.11",
+    "wx-server-sdk": "latest"
+  }
+}
